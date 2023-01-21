@@ -6,7 +6,7 @@ class Post < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
-  #validation
+  # validation
   validates :title, presence: true, length: { in: 1..250 }
   validates :comments_counter, :likes_counter, comparison: { greater_than_or_equal_to: 0 },
                                                numericality: { only_integer: true }
