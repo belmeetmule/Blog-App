@@ -1,2 +1,11 @@
-<h1>Users#index</h1>
+<h1>Names of all the users</h1>
 <p>The list of all users can be found at '/' or 'users/' </p>
+<% if @users.empty? %>
+<p> Emplty list of usesrs </p>
+<% else %>
+    <% @users.each do |user| %>
+    Name: <%= user.name %><br>
+    Photo: <%= user.photo %><br>
+    Number of posts: <%= user.posts_counter %><br>
+    <% end %>
+<% end %>
