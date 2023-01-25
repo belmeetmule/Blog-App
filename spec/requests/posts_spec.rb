@@ -15,7 +15,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should include correct placeholder' do
-      expect(response.body).to include("This is the list of all POSTS.")
+      expect(response.body).to include('This is the list of all POSTS.')
     end
   end
 
