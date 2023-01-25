@@ -18,8 +18,6 @@ RSpec.describe 'Users', type: :request do
     end
   end
 
-
-
   describe 'GET /show' do
     before :each do
       get '/users/:id'
