@@ -1,5 +1,9 @@
 <% content_for :title, "#{@user.name} | #{@post.title}" %>
 <h1>Posts#show</h1>
+<% if flash[:success] %>
+  <div class="notice"><%= flash[:success] %></div>
+<% end %>
+
 <section class="post-comments">
   <section class="post">
     <%= render "user_post", post: @post %>
@@ -15,3 +19,11 @@
     <% end %>
   <div>
 </section>
+
+<div class="user-interaction">
+<%= button_tag '', class: 'main-button' do%>
+  <%= link_to 'Add Comment', new_user_post_comment_path(@user.id, @post.id), class: "button-link" %>
+<% end %>
+
+<%= render "likes/add_like"%>
+</div>
