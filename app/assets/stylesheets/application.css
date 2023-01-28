@@ -1,15 +1,119 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  min-width: 375px;
+  width: 85%;
+  margin: 0 auto;
+  color: black;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main-container a,
+.user-posts-container a {
+  text-decoration: none;
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.user-image {
+  width: 20%;
+  border: 2px solid rgb(184, 161, 161);
+}
+
+.user-info {
+  border: 2px solid rgb(184, 161, 161);
+  width: 80%;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.count {
+  display: block;
+  padding-right: 30px;
+  text-align: right;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 15px;
+}
+
+.bio,
+.user-post,
+.user-post-comments {
+  border: 2px solid rgb(184, 161, 161);
+  padding: 10px 15px;
+}
+
+.bio p {
+  font-weight: 500;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.green-text {
+  color: green;
+}
+
+.button-center {
+  text-align: center;
+  padding: 30px;
+}
+
+.see-all-posts {
+  padding: 15px 30px;
+}
+
+.users-post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.users-post,
+.text-right {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.post-container,
+.user-posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-posts-container {
+  gap: 35px;
+}
+
+.posts-container > * {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-comments,
+.post-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.user-post-comments {
+  gap: 5px;
+}

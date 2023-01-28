@@ -1,2 +1,17 @@
+<% content_for :title, "#{@user.name} | #{@post.title}" %>
 <h1>Posts#show</h1>
-<p>Here is a single post for a given user. You are in '/users/:user_id/posts/:id'</p>
+<section class="post-comments">
+  <section class="post">
+    <%= render "user_post", post: @post %>
+  </section>
+  <div class="user-post-comments">
+    <% @post.comments.each do |comment| %>
+      <div class="post-comment">
+        <p>
+          <span><strong><%= comment.author.name %>:</strong></span>
+          <span><%= comment.text %></span>
+        </p>
+      </div>
+    <% end %>
+  <div>
+</section>
