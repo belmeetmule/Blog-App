@@ -1,0 +1,12 @@
+<%= render "posts/user_post", post: @post %>
+
+<h2 class="m-3">New Comment</h2>
+<%= form_with model: @comment, url: user_post_comments_path, class: "frm" do  |form| %>
+    <div class="wrapper"
+  <div class="input-group">
+    <label class="form-label">Comment here</label>
+    <%= form.text_area :text, class: "form-control", rows: "7" %>
+  </div>
+  <%= form.button "Add Comment", type: "submit", class: "main-button" %>
+  </div>
+<% end %>
