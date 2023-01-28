@@ -1,111 +1,119 @@
- body{
-    min-width: 375px;
-    width: 85%;
-    margin: 0 auto;
-    color: black;
- }
-
- .main-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+body {
+  min-width: 375px;
+  width: 85%;
+  margin: 0 auto;
+  color: black;
 }
 
-.main-container a, .user-posts-container a{
-    text-decoration: none;
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.user{
-    display: flex;
-    gap:20px;
-    align-items: cneter;
-    justify-content: center;
-    width: 100%;
- }
+.main-container a,
+.user-posts-container a {
+  text-decoration: none;
+}
 
- .user-image{
-   width: 20%;
-   border: 2px solid rgb(184, 161, 161);
- }
- .user-info{
-    border: 2px solid rgb(184, 161, 161);
-    width:80%;
-    padding: 10px 15px;
-    text-decoration: none;
- }
- .count{
-    display: block;
-    padding-right: 30px;
-    text-align: right;
- }
- .users-container{
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-   padding: 10px 15px;
- }
-   .bio, .user-post, .user-post-comments{
-   border: 2px solid rgb(184, 161, 161);
-   padding: 10px 15px;
- }
+.user {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
 
- .bio p{
-   font-weight: 500;
- }
+.user-image {
+  width: 20%;
+  border: 2px solid rgb(184, 161, 161);
+}
 
- .text-right{
-   text-align: right;
- }
+.user-info {
+  border: 2px solid rgb(184, 161, 161);
+  width: 80%;
+  padding: 10px 15px;
+  text-decoration: none;
+}
 
- .green-text{
-   color:green;
- }
+.count {
+  display: block;
+  padding-right: 30px;
+  text-align: right;
+}
 
- .button-center{
-   text-align: center;
-   padding: 30px;
- }
+.users-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 15px;
+}
 
- .see-all-posts{
-   padding: 15px 30px;
- }
+.bio,
+.user-post,
+.user-post-comments {
+  border: 2px solid rgb(184, 161, 161);
+  padding: 10px 15px;
+}
 
- .users-post-container{
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
- }
+.bio p {
+  font-weight: 500;
+}
 
- .users-post, .text-right{
-   text-decoration: none;
-   margin-bottom: 10px;
- }
+.text-right {
+  text-align: right;
+}
 
- .post-container, .user-posts-container{
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
- }
- .user-posts-container{
-   gap:35px;
- }
+.green-text {
+  color: green;
+}
 
- .posts-container > *{
-   text-decoration: none;
-   display: flex;
-   flex-direction: column;
-   gap:10px;
- }
+.button-center {
+  text-align: center;
+  padding: 30px;
+}
 
- .post-comments, .post-details{
-   display: flex;
-   flex-direction: column;
-   gap:5px;
-   margin-top:30px;
- }
+.see-all-posts {
+  padding: 15px 30px;
+}
 
- .user-post-comments{
-   gap:5px;
- }
+.users-post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
- 
+.users-post,
+.text-right {
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.post-container,
+.user-posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user-posts-container {
+  gap: 35px;
+}
+
+.posts-container > * {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-comments,
+.post-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+.user-post-comments {
+  gap: 5px;
+}
