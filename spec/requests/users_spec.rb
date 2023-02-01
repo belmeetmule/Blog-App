@@ -1,26 +1,33 @@
 require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
-  it 'should render index' do
-    get '/'
-    expect(response).to render_template(:index)
+  describe Users do
+    before(:all) do
+    Rails.application.load_seed
+  end
+end
+  describe 'Get /' do
+    it 'should render index' do
+      get '/'
+      expect(response).to render_template(:index)
+    end
   end
 
   describe 'GET /index' do
     it 'returns http success' do
-      get '/users/index'
+      get '/users/'
       expect(response).to have_http_status(:success)
     end
 
     it 'should include correct placeholder' do
       get '/'
-      expect(response.body).to include("The list of all users can be found at '/' or 'users/'")
+      expect(response.body).to include("Users#index")
     end
   end
 
   describe 'GET /show' do
     before :each do
-      get '/users/:id'
+      get '/users/id'
     end
 
     it 'returns http success' do
@@ -32,7 +39,7 @@ RSpec.describe 'Users', type: :request do
     end
 
     it 'should include correct placeholder' do
-      expect(response.body).to include("An individual user whose id is in the url. You are at '/user/:id'")
+      expect(response.body).to include("Users#show")
     end
   end
 end

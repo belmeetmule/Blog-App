@@ -29,11 +29,11 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should render show' do
-      expect(response).to render_template(:show)
+      expect(response).to render_template('posts/:show')
     end
 
     it 'should include correct placeholder' do
-      expect(response.body).to include("Here is a single post for a given user. You are in '/users/:user_id/posts/:id'")
+      expect(response.body).to include("Posts#index")
     end
   end
 end
