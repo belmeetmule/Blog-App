@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe 'Users', type: :request do
   describe Users do
     before(:all) do
-    Rails.application.load_seed
+      Rails.application.load_seed
+    end
   end
-end
   describe 'Get /' do
     it 'should render index' do
       get '/'
@@ -21,7 +21,7 @@ end
 
     it 'should include correct placeholder' do
       get '/'
-      expect(response.body).to include("Users#index")
+      expect(response.body).to include('Users#index')
     end
   end
 
@@ -39,7 +39,7 @@ end
     end
 
     it 'should include correct placeholder' do
-      expect(response.body).to include("Users#show")
+      expect(response.body).to include('Users#show')
     end
   end
 end

@@ -33,7 +33,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should include correct placeholder' do
-      expect(response.body).to include("Posts#index")
+      expect(response.body).to include('Posts#index')
     end
   end
 end
