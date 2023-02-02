@@ -171,3 +171,7 @@ a.button-link {
   text-decoration: none;
   color: black;
 }
+
+section.pagy {
+  margin: 20px auto;
+}
