@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Post Index', type: :feature do
   before :each do
-    @profile_pic= 'https://unsplash.com/photos/F_-0BxGuVvo'
+    @profile_pic = 'https://unsplash.com/photos/F_-0BxGuVvo'
     @author = User.create(name: 'Mulugeta',
                           photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
                           bio: 'Mv Student')
@@ -18,9 +18,9 @@ RSpec.describe 'Post Index', type: :feature do
 
     visit user_path(@author)
 
-    
+
     click_link 'See all posts'
-    #click_on @author.name
+    # click_on @author.name
   end
 
   it 'shows the username of the user' do
