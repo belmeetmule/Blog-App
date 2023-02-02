@@ -6,6 +6,9 @@
     <h3>Bio<h3>
     <p><%= @user.bio %></p>
   </div>
+  <%= link_to new_user_post_path(@user) do %>
+    <button type="button" class="main-button">New post</button>
+  <% end %>
 
   <% @user.recent_three.each do |post| %>
     <%= link_to user_post_path(@user, post) do %>
