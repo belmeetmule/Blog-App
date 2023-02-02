@@ -14,7 +14,7 @@ RSpec.describe 'Post Show', type: :feature do
     @com1 = Comment.create(author: @author, post: @first_post, text: 'Great work')
     @com2 = Comment.create(author: @author, post: @first_post,
                            text: 'Hello there')
-    @com3 = Comment.create(author: @author, post: @first_post, text: 'Cant wait read your next post')
+    @com3 = Comment.create(author: @author, post: @first_post, text: 'Cant wait to read your next post')
 
     @like1 = @first_post.likes.create!(author: @author)
 
@@ -37,11 +37,11 @@ RSpec.describe 'Post Show', type: :feature do
     expect(page).to have_content(@first_post.title)
   end
 
-  it 'shows part of a post body (This is ObiWans\' message: Don\'t let the Empire win)' do
+  it 'shows part of a post body (This is my first post)' do
     expect(page).to have_content(@first_post.text)
   end
 
-  it 'shows the comments on the post users left lik(Thank you for your support 😊)' do
+  it 'shows the comments on the post users left like(I cant wait to read your next post)' do
     expect(page).to have_content(@com1.text)
     expect(page).to have_content(@com2.text)
     expect(page).to have_content(@com3.text)
