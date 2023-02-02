@@ -1,6 +1,5 @@
 require 'spec_helper'
 require 'webdrivers'
-Rails.application.load_seed
 
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
