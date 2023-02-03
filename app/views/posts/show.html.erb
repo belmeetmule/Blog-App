@@ -9,7 +9,7 @@
     <%= render "user_post", post: @post %>
   </section>
   <div class="user-post-comments">
-    <% @post.comments.each do |comment| %>
+    <% @comments.each do |comment| %>
       <div class="post-comment">
         <p>
           <span><strong><%= comment.author.name %>:</strong></span>

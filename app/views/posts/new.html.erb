@@ -3,7 +3,7 @@
 
 <h1 class="text-xl mt-8">New Post</h1>
 <%= form_with model: @new_post, url: user_posts_path, class: "frm" do |form|  %>
-  <div class="input-group input-group-outline mb-4">
+  <div class="input-group">
     <label class="form-label">Post title</label>
     <%= form.text_field :title, class: "form-control" %>
   </div>

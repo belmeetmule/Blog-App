@@ -28,6 +28,10 @@ body {
   border: 2px solid rgb(184, 161, 161);
 }
 
+.profile-pic {
+  width: 100%;
+}
+
 .user-info {
   border: 2px solid rgb(184, 161, 161);
   width: 80%;
@@ -166,4 +170,8 @@ button.main-button {
 a.button-link {
   text-decoration: none;
   color: black;
+}
+
+section.pagy {
+  margin: 20px auto;
 }

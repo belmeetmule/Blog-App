@@ -1,11 +1,11 @@
 <%= link_to user_path(user) do %>
     <li class="user">
       <div class="user-image">
-        <%= image_tag user.photo, alt: "#{user.name}-avatar", class: 'w-36 h-36 object-cover object-center rounded-[50%]' %>
+        <%= image_tag user.photo, alt: "#{user.name}-avatar", class: 'profile-pic' %>
       </div>
       <div class="user-info">
         <h2 class="username"><%= user.name %></h2>
-        <span class="count">Number of posts: <% if (user.posts_counter == nil) %>
+        <span class="count">Number of posts:<% if (user.posts_counter === nil) %>
         <%= 0 %>
         <% else %>
         <%= user.posts_counter %>
