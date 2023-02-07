@@ -19,7 +19,6 @@ RSpec.describe 'Post Index', type: :feature do
     visit user_path(@author)
 
     click_link 'See all posts'
-    # click_on @author.name
   end
 
   it 'shows the username of the user' do
