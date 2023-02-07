@@ -85,11 +85,11 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> key features of the application.
 
-- **Post blog**
-- **feature to like a post and see how many likes each has got**
-- **Feature to let the readers of a post to share thier comment**
+- **Allows user to Post blog**
+- **User can like a post and see how many likes each has got**
+- **User write on a post**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
