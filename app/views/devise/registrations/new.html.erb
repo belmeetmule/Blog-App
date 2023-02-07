@@ -1,31 +1,37 @@
+<section class="main-container layout-centered">
 <h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class:'devise-form'}) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
   <div class="field">
-    <%= f.text_field :name, autofocus: true, placeholder: 'Name', class:'frm-control' %>
+    <%= f.label :"Full Name" %><br />
+    <%= f.text_field :name, autofocus: true, autocomplete: "name" %>
   </div>
 
   <div class="field">
-    <%= f.email_field :email, autofocus: true, placeholder: 'Email', autocomplete: "email", class: 'frm-control' %>
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password, class: 'frm-control', autocomplete: "new-password", placeholder: "Password #{@minimum_password_length} characters minimum" %>
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
   <div class="field">
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: 'Confim password', class: 'frm-control' %>
-  </div>
-
-  <div class="field">
-    <%= f.text_area :bio, class: "frm-control", rows: "7", placeholder: 'Enter your bio'%>
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up", class: "main-button" %>
+    <%= f.submit "Sign up" %>
   </div>
 <% end %>
-
+<div devise-shared-links>
 <%= render "devise/shared/links" %>
+</div>
+</section>
