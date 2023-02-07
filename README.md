@@ -193,6 +193,11 @@ Example:
 - Twitter: [@belmeetmule](https://twitter.com/belmeetmule)
 - LinkedIn: [belmeetmule](https://linkedin.com/in/belmeetmule)
 
+👤 **David Amon-cofie**
+- GitHub: [@amon-cofie](https://github.com/amon-cofie)
+- Twitter: [@amon_cofie](https://twitter.com/amon_cofie)
+- LinkedIn: [David Amon-Cofie](https://www.linkedin.com/in/david-amon-cofie-2389ab241/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
