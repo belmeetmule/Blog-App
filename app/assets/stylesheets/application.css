@@ -175,3 +175,27 @@ a.button-link {
 section.pagy {
   margin: 20px auto;
 }
+
+section.main-container.layout-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form#new_user {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 10px;
+  width: 100%;
+}
+
+input#user_email, input[type="password"], input[type="submit"] {
+  width: 100%;
+  background-color: none;
+  font-size: 21px;
+}
+
+input[type="submit"]{
+  margin-top: 10px;
+}
