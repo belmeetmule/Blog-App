@@ -85,9 +85,9 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> key features of the application.
+> key features of the application:
 
-- **Allows user to Post blog**
+- **The app allows user to post blog**
 - **User can like a post and see how many likes each has got**
 - **User write on a post**
 
