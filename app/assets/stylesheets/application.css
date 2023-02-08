@@ -190,9 +190,9 @@ section.main-container.layout-centered {
   width: 60%;
 }
 
-input#user_email, 
-input#user_name, 
-input[type="password"], 
+input#user_email,
+input#user_name,
+input[type="password"],
 input[type="submit"] {
   width: 100%;
   font-size: 21px;
