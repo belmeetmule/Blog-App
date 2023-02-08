@@ -190,12 +190,14 @@ section.main-container.layout-centered {
   width: 60%;
 }
 
-input#user_email, input#user_name, input[type="password"], input[type="submit"] {
+input#user_email, 
+input#user_name, 
+input[type="password"], 
+input[type="submit"] {
   width: 100%;
-  background-color: none;
   font-size: 21px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   margin-top: 10px;
 }
