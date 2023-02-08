@@ -182,15 +182,15 @@ section.main-container.layout-centered {
   align-items: center;
 }
 
-form#new_user {
+.devise-form {
   display: flex;
   flex-direction: column;
   padding: 50px;
   gap: 10px;
-  width: 100%;
+  width: 60%;
 }
 
-input#user_email, input[type="password"], input[type="submit"] {
+input#user_email, input#user_name, input[type="password"], input[type="submit"] {
   width: 100%;
   background-color: none;
   font-size: 21px;
