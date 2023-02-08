@@ -182,12 +182,12 @@ section.main-container.layout-centered {
   align-items: center;
 }
 
-.devise {
+.devise-form {
   display: flex;
   flex-direction: column;
   padding: 50px;
   gap: 10px;
-  width: 100%;
+  width: 60%;
 }
 
 input#user_email, input#user_name, input[type="password"], input[type="submit"] {
