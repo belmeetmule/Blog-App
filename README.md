@@ -57,6 +57,12 @@
     <li><a href="#">RSpec and Capybara</a></li>
   </ul>
 </details>
+<summary>Authorization and Authentication</summary>
+  <ul>
+    <li><a href="#">Authentication: Devise</a></li>
+    <li><a href="#">Authorization: CanCanCan</a></li>
+  </ul>
+</details>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
