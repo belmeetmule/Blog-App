@@ -72,6 +72,7 @@
 - **The app allows user to post blog**
 - **User can like a post and see how many likes each has got**
 - **User write on a post**
+- ** Provides APIs **
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
