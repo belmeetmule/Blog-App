@@ -26,10 +26,10 @@ class PostsController < ApplicationController
     end
   end
 
-  #delete posst
+  # delete posst
   def destroy
     post = Post.find(params[:id])
-    puts "i was here"
+    puts 'i was here'
     if post.destroy
       flash[:success] = 'Post was successfully deleted.'
     else
