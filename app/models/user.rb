@@ -9,6 +9,15 @@ class User < ApplicationRecord
   # validation
   validates :name, presence: true
   validates :posts_counter, comparison: { greater_than_or_equal_to: 0 }, numericality: { only_integer: true }
+
+  # User::Roles
+  # The available roles
+  Roles = [ :admin , :default ]
+
+  def is?( requested_role )
+    self.role == requested_role.to_s
+  end
+  
   def recent_three
     posts.order(created_at: :desc).limit(3)
   end
