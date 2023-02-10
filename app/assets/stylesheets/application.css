@@ -118,6 +118,12 @@ body {
   margin-top: 30px;
 }
 
+.post-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .user-post-comments {
   gap: 5px;
 }
