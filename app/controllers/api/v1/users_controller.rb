@@ -1,18 +1,18 @@
 class Api::V1::UsersController < Api::V1::ApplicationController
-    before_action :set_author, only: [:show]
 
     def index
-        authors = User.all.order(:id)
-        render json: authors, status: :ok
+      authors = User.all.order(:id)
+      json_response(authors)
     end
 
     def show
-        render json: @author, status: :ok
+      @author = User.find(params[:id])
+      json_response(@author)
     end
 
     private
 
-    def set_author
-        @author = User.find(params[:id])
+    def json_response(object, status = :ok)
+      render json: object, status: status
     end
 end
