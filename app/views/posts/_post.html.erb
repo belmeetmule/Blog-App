@@ -1,0 +1,11 @@
+<div class="user-post">
+  <div class="post">
+    <h2><%= post.title %> by <%= post.author.name %></h2>
+    <p><%= post.text %></p>
+  </div>
+  
+  <aside class="text-right">
+    <span>Comments: <%= post.comments_counter %></span>
+    <span>Likes: <%= post.likes_counter %></span>
+  <aside>
+</div>
