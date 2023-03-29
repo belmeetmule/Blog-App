@@ -1,0 +1,13 @@
+<% content_for :title, "Blog App" %>
+<h1>Users#index</h1>
+<section class="main-container">
+    <% if @users.blank? %>
+        <p>There are not any users currently in the system.</p>
+    <% else %>
+        <% @users.each do |user| %>
+            <%= render "user", user: user %>
+        <% end %>
+        <% end %>
+</section
+
+
