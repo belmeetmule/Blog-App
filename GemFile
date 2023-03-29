@@ -83,3 +83,5 @@ gem 'pagy', '~> 6.0'
 gem 'devise'
 
 gem 'cancancan'
+
+gem 'rswag'
