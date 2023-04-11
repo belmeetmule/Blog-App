@@ -7,7 +7,7 @@ RSpec.describe 'Post Index', type: :feature do
                           photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
                           bio: 'Mv Student')
 
-    @first_post = Post.create(author: @author, title: 'Hello', text: 'This is my first post')
+    @first_post = Post.create(author: @author, title: 'Hello', text: 'This is not my first post')
     @second_post = Post.create(author: @author, title: 'Second post',
                                text: 'This is my second post')
 
