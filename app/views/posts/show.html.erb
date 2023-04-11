@@ -9,12 +9,15 @@
     <%= render "user_post", post: @post %>
   </section>
   <div class="user-post-comments">
-    <% @post.comments.each do |comment| %>
+    <% @comments.each do |comment| %>
       <div class="post-comment">
         <p>
           <span><strong><%= comment.author.name %>:</strong></span>
           <span><%= comment.text %></span>
         </p>
+        <% if can? :destroy, comment %>
+        <%= button_to "Delete Comment", user_post_comment_path(@user, @post, comment), method: :delete, class: "button-link" %>
+      <% end %>
       </div>
     <% end %>
   <div>
@@ -26,4 +29,8 @@
 <% end %>
 
 <%= render "likes/add_like"%>
+
+<% if can? :destroy, @post %>
+  <%= button_to "Delete Post", user_post_path, method: :delete, class: "main-button"%>
+<% end %>
 </div>

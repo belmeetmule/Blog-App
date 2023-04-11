@@ -27,4 +27,8 @@
       </section>
     <% end %>
   <% end %>
+  <%# Note the double equals sign "==" which marks the output as trusted and html safe: %>
+  <section class="pagy">
+    <%== pagy_nav(@pagy) %>
+  </section>
 </section>

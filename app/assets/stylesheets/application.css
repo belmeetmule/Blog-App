@@ -28,6 +28,10 @@ body {
   border: 2px solid rgb(184, 161, 161);
 }
 
+.profile-pic {
+  width: 100%;
+}
+
 .user-info {
   border: 2px solid rgb(184, 161, 161);
   width: 80%;
@@ -114,6 +118,12 @@ body {
   margin-top: 30px;
 }
 
+.post-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .user-post-comments {
   gap: 5px;
 }
@@ -166,4 +176,34 @@ button.main-button {
 a.button-link {
   text-decoration: none;
   color: black;
+}
+
+section.pagy {
+  margin: 20px auto;
+}
+
+section.main-container.layout-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.devise-form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  gap: 10px;
+  width: 60%;
+}
+
+input#user_email,
+input#user_name,
+input[type="password"],
+input[type="submit"] {
+  width: 100%;
+  font-size: 21px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
 }
