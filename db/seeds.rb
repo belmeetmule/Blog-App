@@ -1,4 +1,4 @@
-User.create([
+users=User.create([
   { name: 'User1', photo: 'https://example.com/user1.jpg', bio: 'Bio1' },
   { name: 'User2', photo: 'https://example.com/user2.jpg', bio: 'Bio2' },
   { name: 'User3', photo: 'https://example.com/user3.jpg', bio: 'Bio3' },
