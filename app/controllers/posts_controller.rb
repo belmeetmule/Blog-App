@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
-    @pagy, @posts = pagy(@user.posts)
+    @pagy, @posts = pagy(@user.posts.includes(:comments))
   end
 
   def show
@@ -24,18 +24,6 @@ class PostsController < ApplicationController
       flash.now[:error] = 'Error: Post could not be saved'
       render :new
     end
-  end
-
-  # delete posst
-  def destroy
-    post = Post.find(params[:id])
-    puts 'i was here'
-    if post.destroy
-      flash[:success] = 'Post was successfully deleted.'
-    else
-      flash[:error] = 'Error: Post could not be deleted'
-    end
-    redirect_to user_posts_url
   end
 
   private
