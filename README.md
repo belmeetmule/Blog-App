@@ -6,7 +6,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -60,8 +59,6 @@
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-> key features of the application:
 
 - **The app allows user to post blog**
 - **User can like a post and see how many likes each has got**
