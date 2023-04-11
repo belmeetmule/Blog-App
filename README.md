@@ -35,7 +35,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -66,15 +66,6 @@
 - **The app allows user to post blog**
 - **User can like a post and see how many likes each has got**
 - **User write on a post**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](not yet)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,14 +137,14 @@ To run tests, run the following command:
 ### Deployment
 
 You can deploy this project using:
+[Render](https://render.com/)
+[Heroku](https://www.heroku.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Mulugeta M**
 
@@ -210,8 +201,6 @@ I would like to thank...
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[How to run this app after I cloned it to my local machine]**
 
