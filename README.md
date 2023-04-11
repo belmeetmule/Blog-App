@@ -1,36 +1,11 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -76,25 +51,27 @@ After you're finished please remove all the comments and instructions!
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
-
+<summary>Testing</summary>
+  <ul>
+    <li><a href="#">RSpec and Capybara</a></li>
+  </ul>
+</details>
+<summary>Authorization and Authentication</summary>
+  <ul>
+    <li><a href="#">Authentication: Devise</a></li>
+    <li><a href="#">Authorization: CanCanCan</a></li>
+  </ul>
+</details>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> key features of the application:
 
-- **Post blog**
-- **feature to like a post and see how many likes each has got**
-- **Feature to let the readers of a post to share thier comment**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](not yet)
+- **The app allows user to post blog**
+- **User can like a post and see how many likes each has got**
+- **User write on a post**
+- ** Provides APIs **
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -167,14 +144,6 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-<!--
-Example:
-
-```sh
-
-```
- -->
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
@@ -188,6 +157,11 @@ Example:
 - GitHub: [@belmeetmule](https://github.com/belmeetmule)
 - Twitter: [@belmeetmule](https://twitter.com/belmeetmule)
 - LinkedIn: [belmeetmule](https://linkedin.com/in/belmeetmule)
+
+👤 **David Amon-cofie**
+- GitHub: [@amon-cofie](https://github.com/amon-cofie)
+- Twitter: [@amon_cofie](https://twitter.com/amon_cofie)
+- LinkedIn: [David Amon-Cofie](https://www.linkedin.com/in/david-amon-cofie-2389ab241/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
