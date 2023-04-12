@@ -18,16 +18,16 @@ RSpec.describe 'Post Index', type: :feature do
   it 'Adds a new post' do
     visit user_posts_path(@author)
     click_link 'New post'
-    fill_in "post[title]", :with => 'Hello'
-    fill_in 'post_text', :with => 'A system test is going on'
+    fill_in 'post[title]', with: 'Hello'
+    fill_in 'post_text', with: 'A system test is going on'
     click_on 'Create Post'
     expect(page).to have_content 'Post saved successfully'
   end
-  it "adds a new post with no title specified" do
+  it 'adds a new post with no title specified' do
     visit user_posts_path(@author)
     click_link 'New post'
-    fill_in "post[title]", :with => ''
-    fill_in 'post_text', :with => 'A system test is going on'
+    fill_in 'post[title]', with: ''
+    fill_in 'post_text', with: 'A system test is going on'
     click_on 'Create Post'
     expect(page).to have_content 'Error: Post could not be saved'
   end
