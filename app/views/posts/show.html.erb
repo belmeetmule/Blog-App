@@ -1,4 +1,5 @@
 <% content_for :title, "#{@user.name} | #{@post.title}" %>
+<%= render 'users/user_info' %>
 <h1>Posts#show</h1>
 <% if flash[:success] %>
   <div class="notice"><%= flash[:success] %></div>
