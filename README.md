@@ -34,7 +34,7 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://expressjs.com/">Ruby on Rails</a></li>
   </ul>
 </details>
 
@@ -56,22 +56,13 @@
     <li><a href="#">RSpec and Capybara</a></li>
   </ul>
 </details>
-<summary>Authorization and Authentication</summary>
-  <ul>
-    <li><a href="#">Authentication: Devise</a></li>
-    <li><a href="#">Authorization: CanCanCan</a></li>
-  </ul>
-</details>
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-> key features of the application:
-
 - **The app allows user to post blog**
 - **User can like a post and see how many likes each has got**
 - **User write on a post**
-- ** Provides APIs **
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,14 +134,14 @@ To run tests, run the following command:
 ### Deployment
 
 You can deploy this project using:
+[Render](https://render.com/)
+[Heroku](https://www.heroku.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Mulugeta M**
 
@@ -159,9 +150,9 @@ You can deploy this project using:
 - LinkedIn: [belmeetmule](https://linkedin.com/in/belmeetmule)
 
 👤 **David Amon-cofie**
-- GitHub: [@amon-cofie](https://github.com/amon-cofie)
-- Twitter: [@amon_cofie](https://twitter.com/amon_cofie)
-- LinkedIn: [David Amon-Cofie](https://www.linkedin.com/in/david-amon-cofie-2389ab241/)
+- GitHub: [@githubhandle](https://github.com/gauravgangwarweb)
+- Twitter: [@twitterhandle](https://twitter.com/GauravGangwar51)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/gauravgangwarweb)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -207,8 +198,6 @@ I would like to thank...
 <!-- FAQ (optional) -->
 
 ## ❓ FAQ <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
 
 - **[How to run this app after I cloned it to my local machine]**
 

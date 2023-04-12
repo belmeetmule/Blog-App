@@ -5,6 +5,11 @@
   <div class="notice-success"><%= flash[:success] %></div>
 <% end %>
   <%= render "users/user", user: @user %>
+
+  <%= link_to new_user_post_path(@user) do %>
+  <button type="button" class="main-button">New post</button>
+  <% end %>
+  
   <% @user.posts.each do | post | %>
     <%= link_to user_post_path(@user, post) do %>
       <section class = "post-comments">
