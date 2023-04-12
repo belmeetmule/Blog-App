@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'User index', type: :feature do
   before :each do
-    @author = User.create(name: 'Mulugeta',
+    @author = User.create(name: 'Mulugeta M.',
                           photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
                           bio: 'Mv Student')
     visit users_path
