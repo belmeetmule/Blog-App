@@ -1,0 +1,36 @@
+<% content_for :title, "#{@user.name} | #{@post.title}" %>
+<h1>Posts#show</h1>
+<% if flash[:success] %>
+  <div class="notice"><%= flash[:success] %></div>
+<% end %>
+
+<section class="post-comments">
+  <section class="post">
+    <%= render "user_post", post: @post %>
+  </section>
+  <div class="user-post-comments">
+    <% @comments.each do |comment| %>
+      <div class="post-comment">
+        <p>
+          <span><strong><%= comment.author.name %>:</strong></span>
+          <span><%= comment.text %></span>
+        </p>
+        <% if can? :destroy, comment %>
+        <%= button_to "Delete Comment", user_post_comment_path(@user, @post, comment), method: :delete, class: "button-link" %>
+      <% end %>
+      </div>
+    <% end %>
+  <div>
+</section>
+
+<div class="user-interaction">
+<%= button_tag '', class: 'main-button' do%>
+  <%= link_to 'Add Comment', new_user_post_comment_path(@user.id, @post.id), class: "button-link" %>
+<% end %>
+
+<%= render "likes/add_like"%>
+
+<% if can? :destroy, @post %>
+  <%= button_to "Delete Post", user_post_path, method: :delete, class: "main-button"%>
+<% end %>
+</div>

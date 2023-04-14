@@ -1,0 +1,34 @@
+<% content_for :title, "#{@user.name}'s Posts" %>
+<h1>Posts#index</h1>
+<section class = "main-container">
+<% if flash[:success] %>
+  <div class="notice-success"><%= flash[:success] %></div>
+<% end %>
+  <%= render "users/user", user: @user %>
+  <% @user.posts.each do | post | %>
+    <%= link_to user_post_path(@user, post) do %>
+      <section class = "post-comments">
+      <%= render "post", post: post %>
+      
+      <div class="user-post-comments">
+        <h2>
+          <span>Comments for Post: </span>
+          <span class="green-text"><%="#{post.title}"%> </span>
+        </h2>
+        <% post.recent_five.each do |comment| %>
+          <div class="post-comment">
+            <p>
+              <span><strong><%= comment.author.name %>:</strong></span>
+              <span><%= comment.text %></span>
+            </p>
+          </div>
+        <% end %>
+      </div>
+      </section>
+    <% end %>
+  <% end %>
+  <%# Note the double equals sign "==" which marks the output as trusted and html safe: %>
+  <section class="pagy">
+    <%== pagy_nav(@pagy) %>
+  </section>
+</section>
