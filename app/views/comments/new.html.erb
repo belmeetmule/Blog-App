@@ -1,5 +1,5 @@
+<%= render 'users/user_info' %>
 <%= render "posts/user_post", post: @post %>
-
 <h2 class="m-3">New Comment</h2>
 <%= form_with model: @comment, url: user_post_comments_path, class: "frm" do  |form| %>
     <div class="wrapper"
