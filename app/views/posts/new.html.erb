@@ -1,8 +1,7 @@
 <% content_for :title, "New Post" %>
+<%= render 'users/user_info' %>
 <h1>Post#new</h1>
-<% if flash[:error] %>
-  <div class="notice-error"><%= flash[:error] %></div>
-<% end %>
+
 <h1 class="text-xl mt-8">New Post</h1>
 <%= form_with model: @new_post, url: user_posts_path, class: "frm" do |form|  %>
   <div class="input-group">
