@@ -23,11 +23,8 @@ example_id                                      | status  | run_time        |
 ./spec/models/user_spec.rb[1:4]                 | passed  | 0.00358 seconds |
 ./spec/models/user_spec.rb[1:5]                 | passed  | 0.00439 seconds |
 ./spec/models/user_spec.rb[1:6]                 | passed  | 0.00676 seconds |
-./spec/requests/comments_spec.rb[1:1:1]         | pending | 0.00003 seconds |
+./spec/requests/get_posts_spec.rb[1:1]          | passed  | 0.24304 seconds |
 ./spec/requests/likes_spec.rb[1:1:1]            | pending | 0.00003 seconds |
-./spec/requests/posts_spec.rb[1:2:1]            | failed  | 0.00397 seconds |
-./spec/requests/posts_spec.rb[1:2:2]            | failed  | 0.00404 seconds |
-./spec/requests/posts_spec.rb[1:2:3]            | failed  | 0.0892 seconds  |
 ./spec/requests/users_spec.rb[1:1:1]            | passed  | 0.00709 seconds |
 ./spec/requests/users_spec.rb[1:2:1]            | passed  | 0.01059 seconds |
 ./spec/requests/users_spec.rb[1:2:2]            | passed  | 0.00613 seconds |
