@@ -1,4 +1,5 @@
 <% content_for :title, "#{@user.name} | #{@post.title}" %>
+<%= render 'users/user_info' %>
 <h1>Posts#show</h1>
 <% if flash[:success] %>
   <div class="notice"><%= flash[:success] %></div>
@@ -15,9 +16,6 @@
           <span><strong><%= comment.author.name %>:</strong></span>
           <span><%= comment.text %></span>
         </p>
-        <% if can? :destroy, comment %>
-        <%= button_to "Delete Comment", user_post_comment_path(@user, @post, comment), method: :delete, class: "button-link" %>
-      <% end %>
       </div>
     <% end %>
   <div>
@@ -29,8 +27,4 @@
 <% end %>
 
 <%= render "likes/add_like"%>
-
-<% if can? :destroy, @post %>
-  <%= button_to "Delete Post", user_post_path, method: :delete, class: "main-button"%>
-<% end %>
 </div>

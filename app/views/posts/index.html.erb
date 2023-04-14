@@ -1,4 +1,5 @@
 <% content_for :title, "#{@user.name}'s Posts" %>
+<%= render 'users/user_info' %>
 <h1>Posts#index</h1>
 <section class = "main-container">
 <% if flash[:success] %>
