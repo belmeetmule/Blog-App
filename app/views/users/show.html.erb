@@ -1,23 +1,22 @@
 <% content_for :title, "#{@user.name}'s - Blog" %>
 <%= render 'user_info' %>
-<h1>Users#show</h1>
-<section class="main-container">
-  <%= render "user", user: @user %>
-  <div class="bio">
-    <h3>Bio<h3>
-    <p><%= @user.bio %></p>
-  </div>
-  <%= link_to new_user_post_path(@user) do %>
-    <button type="button" class="main-button">New post</button>
-  <% end %>
 
+<section class="container">
+  <div style="background-color: #FFE6C1">
+    <%= render "user", user: @user %>
+    <h3 class="mt-3 px-3">Bio</h3>
+    <p class="card-text p-3"><%= @user.bio %></p>
+    
+  </div>
+  <h3 class="mt-5 text-secondary">Recent posts</h3>
   <% @user.recent_three.each do |post| %>
     <%= link_to user_post_path(@user, post) do %>
       <%= render "posts/post", post: post %>
     <% end %>
   <% end %>
   
-  <%= link_to user_posts_path(@user), class: 'button-center' do %>
-    <button type="button" class="see-all-posts">See all posts</button>
+  <div class="d-flex justify-content-center mt-3 mb-5">
+  <%= link_to user_posts_path(@user) do %>
+    <button type="button" class= 'btn btn-primary'>See all posts</button>
   <% end %>
 </section>

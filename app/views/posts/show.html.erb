@@ -5,7 +5,7 @@
   <div class="notice"><%= flash[:success] %></div>
 <% end %>
 
-<section class="post-comments">
+<section class="container">
   <section class="post">
     <%= render "user_post", post: @post %>
   </section>
@@ -21,10 +21,10 @@
   <div>
 </section>
 
-<div class="user-interaction">
-<%= button_tag '', class: 'main-button' do%>
-  <%= link_to 'Add Comment', new_user_post_comment_path(@user.id, @post.id), class: "button-link" %>
-<% end %>
+<div class="d-flex flex-row justify-content-end">
+
+  <%= link_to 'Add Comment', new_user_post_comment_path(@user.id, @post.id), class: 'btn btn-primary'  %>
+
 
 <%= render "likes/add_like"%>
 </div>

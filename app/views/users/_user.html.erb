@@ -1,16 +1,23 @@
-<%= link_to user_path(user) do %>
-    <li class="user">
-      <div class="user-image">
-        <%= image_tag user.photo, alt: "#{user.name}-avatar", class: 'profile-pic' %>
+<div class="mt-5">
+<%= link_to user_path(user), class: "text-secondary" do %>
+<div class="card mb-3 bg-white">
+  <div class="row no-gutters">
+    <div class="col-md-1">
+      <%= image_tag user.photo, alt: "#{user.name}-avatar", class: "w-100 h-100 rounded-circle" %>
+    </div>
+    <div class="col-md-11">
+      <div class="card-body">
+        <h2 class="card-title"><%= user.name %></h2>
+        <p class="card-text"><small class="text-muted d-flex justify-content-end">
+          Number of posts:<% if (user.posts_counter === nil) %>
+          <%= 0 %>
+          <% else %>
+          <%= user.posts_counter %>
+          <% end %>
+        </small></p>
       </div>
-      <div class="user-info">
-        <h2 class="username"><%= user.name %></h2>
-        <span class="count">Number of posts:<% if (user.posts_counter === nil) %>
-        <%= 0 %>
-        <% else %>
-        <%= user.posts_counter %>
-        <% end %>
-        </span>
-      </div>
-    </li>
-  <% end %>
+    </div>
+  </div>
+</div>
+<% end %>
+</div>
