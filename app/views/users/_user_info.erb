@@ -1,5 +1,28 @@
-  <%= button_to(
+  <nav class="navbar fixed-top navbar-light mb-8" style="background-color: #FFC671">
+      <%= link_to user_posts_path(current_user), class:"d-flex" do%>
+      <img src="/docs/4.4/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <h1> Z-Blogger</h1>
+  <% end %>
+
+   <div class= "d-flex mx-3">
+  <%= link_to new_user_post_path(current_user) do %>
+    <button type="button" class="btn btn-primary">New post</button>
+  <% end %>
+
+  <%= link_to user_path(current_user) do %>
+    <button type="button" class="btn btn-primary mx-3">Profile</button>
+  <% end %>
+
+  <%= link_to edit_user_registration_path(current_user) do %>
+  <button type="button" class="btn btn-primary mx-3"> Edit profile</button>
+  <% end %>
+ 
+
+   <%= button_to(
           "Log Out",
           destroy_user_session_path,
-          method: :delete
+          method: :delete,
+          class: "btn btn-danger mx-3"
       ) %>
+      </div>
+</nav>

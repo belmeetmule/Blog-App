@@ -1,7 +1,7 @@
 <% content_for :title, "#{@user.name}'s Posts" %>
 <%= render 'users/user_info' %>
 <h1>Posts#index</h1>
-<section class = "main-container">
+<section class = "container">
 <% if flash[:success] %>
   <div class="notice-success"><%= flash[:success] %></div>
 <% end %>
@@ -9,27 +9,32 @@
   <% @user.posts.each do | post | %>
     <%= link_to user_post_path(@user, post) do %>
       <section class = "post-comments">
-      <%= render "post", post: post %>
-      
-      <div class="user-post-comments">
-        <h2>
-          <span>Comments for Post: </span>
-          <span class="green-text"><%="#{post.title}"%> </span>
-        </h2>
-        <% post.recent_five.each do |comment| %>
-          <div class="post-comment">
-            <p>
-              <span><strong><%= comment.author.name %>:</strong></span>
-              <span><%= comment.text %></span>
-            </p>
+        <%= render "post", post: post %>
+      <% if post.comments.length > 0 %>
+        <div class="card">
+          <div class=" card-header card-title"> 
+              <h4 class="mx-3 text-dark">Comments for Post: 
+                <span class="text-muted"><%="#{post.title}"%> </span>
+              </h4>
           </div>
-        <% end %>
-      </div>
+        
+          <div class= "card-body">
+            <% post.recent_five.each do |comment| %>
+                <p class="card-text text-secondary">
+                  <span class="bg-light rounded-pill p-2">
+                    <strong><%= comment.author.name %>:</strong>
+                    <%= comment.text %>
+                  </span>
+                </p>
+              
+            <% end %>
+          </div>
+      <% end %>
       </section>
     <% end %>
   <% end %>
   <%# Note the double equals sign "==" which marks the output as trusted and html safe: %>
-  <section class="pagy">
+  <div class="d-flex justify-content-center mb-3">
     <%== pagy_nav(@pagy) %>
-  </section>
+  </div>
 </section>

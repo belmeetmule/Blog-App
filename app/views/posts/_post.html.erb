@@ -1,11 +1,22 @@
-<div class="user-post">
-  <div class="post">
-    <h2><%= post.title %> by <%= post.author.name %></h2>
-    <p><%= post.text %></p>
+<div class="card mb-3 mt-3">
+  <div class="card-header card-title d-flex align-items-center justify-content-between">
+    <h3 class="text-dark"> <%= post.title %> <span class="text-secondary"> by  <%= post.author.name %> </span></h3>
+        
+      <% if (current_user.name == post.author.name) then %>
+      <div class="d-flex">
+        <%= button_to "delete", user_post_path(post.author_id, post.id), method: :delete, class: "btn btn-danger mr-3" %>
+      </div>
+    <% end %>
+    </div>
+    
+    <div class="card-body">
+      <p class= "card-text text-dark">
+        <%= post.text%>
+      </p>
+      <aside class="d-flex flex-row justify-content-end gap-1">
+        <small class="text-muted d-flex justify-content-end mr-3">Comments: <%= post.comments_counter %></small>
+        <small class="text-muted d-flex justify-content-end mr-3">Likes: <%= post.likes_counter %></small>
+      <aside>
   </div>
-  
-  <aside class="text-right">
-    <span>Comments: <%= post.comments_counter %></span>
-    <span>Likes: <%= post.likes_counter %></span>
-  <aside>
 </div>
+    

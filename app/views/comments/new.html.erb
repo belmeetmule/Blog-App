@@ -1,12 +1,13 @@
 <%= render 'users/user_info' %>
 <%= render "posts/user_post", post: @post %>
+<div class="container mt-5">
 <h2 class="m-3">New Comment</h2>
 <%= form_with model: @comment, url: user_post_comments_path, class: "frm" do  |form| %>
-    <div class="wrapper"
+    <div class="wrapper">
   <div class="input-group">
-    <label class="form-label">Comment here</label>
-    <%= form.text_area :text, class: "form-control", rows: "7" %>
+    <%= form.text_area :text, class: "form-control", rows: "7", placeholder: "Write your comment here" %>
   </div>
-  <%= form.button "Add Comment", type: "submit", class: "main-button" %>
+  <%= form.button "Add Comment", type: "submit", class: "btn btn-primary d-flex align-self-end" %>
   </div>
 <% end %>
+</div>
