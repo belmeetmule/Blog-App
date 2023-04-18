@@ -81,3 +81,9 @@ gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'pagy', '~> 6.0'
 
 gem 'devise'
+
+gem 'bootstrap', '~> 5.3.0.alpha3'
+
+gem 'jquery-rails'
+
+gem 'popper_js', '~> 2.11.7'
